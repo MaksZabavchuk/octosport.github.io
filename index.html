@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Octosport.EU - Wkrótce Otwarcie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <video id="loading-video" autoplay playsinline>
+            <source src="dzwiek.mov" type="video/mp4">
+            Twoja przeglądarka nie obsługuje wideo.
+        </video>
+    </div>
+
+    <div id="content" style="display: none;">
+        <div class="language-switcher">
+            <a href="#" onclick="setLanguage('pl')">Polski</a> | 
+            <a href="#" onclick="setLanguage('en')">English</a> | 
+            <a href="#" onclick="setLanguage('es')">Español</a>
+        </div>
+
+        <div class="container">
+            <header>
+                <img src="IMG_9068.PNG" alt="Logo Octosport.EU" class="logo">
+            </header>
+            <main>
+                <h1 id="main-title">Wkrótce Otwarcie!</h1>
+                <p id="main-message">Przygotowujemy dla Ciebie coś wyjątkowego. Już wkrótce otwarcie naszej strony!</p>
+                <div id="countdown">
+                    <h2 id="countdown-title">Czas do otwarcia:</h2>
+                    <div id="timer">
+                        <span id="days"></span> dni 
+                        <span id="hours"></span> godzin 
+                        <span id="minutes"></span> minut 
+                        <span id="seconds"></span> sekund
+                    </div>
+                </div>
+                <a id="facebook-button" href="https://www.facebook.com/profile.php?id=61553870800217" target="_blank" class="facebook-button">
+                    <i class="fab fa-facebook-square"></i> Śledź nas na Facebooku
+                </a>
+            </main>
+            <footer>
+                <div class="loader"></div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
